@@ -14,13 +14,15 @@ export class AuthService {
     }
 
     hello () {
-        return "Hello";
+        console.log("calling method >> hello"); 
+        return "Hello worls";
     }
 
     async create() {
         const createdUser = new this.UserModel({
-            name: "Piter",
-            age: 26
+            name: "Migel",
+            age: 24,
+            email: "some@gmail.com"
         });
         return createdUser.save();
     }

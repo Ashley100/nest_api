@@ -15,8 +15,9 @@ export class UserService {
 
     async create() {
         const createdUser = new this.UserModel({
-            name: "Piter",
-            age: 26
+            name: "Alina",
+            age: 22,
+            email: "alina@gmail.com"
         });
         return createdUser.save();
     }

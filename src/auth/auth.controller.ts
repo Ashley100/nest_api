@@ -6,8 +6,18 @@ import { AuthService } from "./auth.service";
 export class AuthController {
     constructor(private readonly authService: AuthService) {}
 
-    @Get()
+    @Get("login")
     login () {
+        return this.authService.hello();
+    }
+
+    @Get("login")
+    register () {
+        return this.authService.hello();
+    }
+
+    @Get("login")
+    forgotPassword () {
         return this.authService.hello();
     }
 }
