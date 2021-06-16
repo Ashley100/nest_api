@@ -20,7 +20,7 @@ export class AuthService {
 
     async create() {
         const createdUser = new this.UserModel({
-            name: "Migel",
+            name: "Migel 1",
             age: 24,
             email: "some@gmail.com"
         });
